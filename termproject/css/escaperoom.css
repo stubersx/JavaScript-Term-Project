@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../media/room.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: fantasy, cursive, serif;
+    color: white;
+}
+p a {
+    text-decoration: none;
+}
+a, a:visited {
+    color: white;
+}

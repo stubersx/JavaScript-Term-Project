@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="wrapper1">
+        <div id="wrapper2">
+            <div id="wrapper3">
+                <div id="wrapper4">
+                    <section id="header">
+                        <h1>Welcome to My Game Website!</h1>
+                        <section id="intro">
+                            <!--if I decided to use local storage, insert the score here
+                                <p>Your Total Score: <span id="data"></span></p>-->
+                            <p>
+                                This website has three games.<br>
+                                Scroll down to see the description of each game.<br>
+                                There's a secret on this page.<br>
+                                You'll be given a riddle to solve, and you'll have to explore to find the answer!
+                            </p>
+                            <form>
+                                <p>Demo Question: Click the calculator.</p>
+                                <label>Your Answer: </label><input type="text"><br>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <img id="die" src="media/die.png">
+                        </section>
+                    </section>
+                </div>
+                <section id="content1">
+                    <div id="cover1">
+                        <aside>
+                            <h2>Doodle</h2>
+                            <p>Doodle is similar to Wordle, but you compete against the computer. Input a 3-4 letter word. The CPU will then guess a word. The first to guess the correct word will win.</p>
+                        </aside>
+                        <img id="letter" usemap="#l1" src="media/letters.jpg">
+                        <map name="#l1">
+                            <area shape="rect" coords="750,100,1000,300" onclick="window.open('secret.html', 'Secret Page', 'width=530, height=800')">
+                        </map>
+                    </div>
+                </section>
+            </div>
+            <section id="content2">
+                <div id="cover2">
+                    <aside id="mid">
+                        <h2>Escape Room</h2>
+                        <p>Explore the room. Solve the puzzle. Find the hint, the key, and escape the room.</p>
+                    </aside>
+                    <img id="room" usemap="#r1" src="media/room.jpg">
+                    <map name="#r1">
+                        <area shape="rect" coords="610, 160, 750, 330" onclick="window.open('secret.html', 'Secret Page', 'width=530, height=800')">
+                        <area shape="rect" coords="475, 450, 610, 525" onclick="window.open('secret.html', 'Secret Page', 'width=530, height=800')">
+                    </map>
+                </div>
+            </section>
+        </div>
+        <section id="content3">
+            <div id="cover3">
+                <aside>
+                    <h2>Rhythm Game</h2>
+                    <p>Press any key with precise timing when you see the cue.</p>
+                </aside>
+                <img id="music" usemap="#m1" src="media/music.jpg">
+                <map name="#m1">
+                    <area shape="rect" coords="590,110,690,300" onclick="window.open('secret.html', 'Secret Page', 'width=530, height=800')">
+                </map>
+            </div>
+        </section>
+    </div>
+    <section id="footer">
+        <h3>Decided which one to play?</h3>
+        <article id="tabs">
+            <ul>
+                <li onclick="openTab('doodle.html')"><a href="#tab1" style="color: white;">Doodle</a></li>
+                <li onclick="openTab('escaperoom.html')"><a href="#tab2" style="color: white;">Escape Room</a></li>
+                <li onclick="openTab('rhythmgame.html')"><a href="#tab3" style="color: white;">Rhythm Game</a></li>
+                <li onclick="openTab('readme.txt')"><a href="#tab4" style="color: white;">Read Me</a></li>
+            </ul>
+            <section id="tab1">
+                <iframe src="doodle.html"></iframe>
+            </section>
+            <section id="tab2">
+                <iframe src="escaperoom.html"></iframe>
+            </section>
+            <section id="tab3">
+                <iframe src="rhythmgame.html"></iframe>
+            </section>
+            <section id="tab4">
+                <iframe src="readme.txt"></iframe>
+            </section>
+        </article>
+    </section>
+</body>
+</html>
+<!--
+    Audience:
+        The audience for my games is anyone who enjoys quick and easy games.
+        I think especially those who like puzzles, like solving riddles, would enjoy it.
+    Design Layout:
+        I selected media query to make the navigation menu responsive.
+        I also used position sticky to make the page appear to overlap.
+    Color Scheme:
+        I chose the first color for the users to see to be black text and a white background to give a bright impression.
+        I selected white text and a black background as the main color scheme because I thought the black background works better with each background image for game description sections.
+        I kept the main text color and the background color the same for the navigation menu, but I added a dark red color to the border and the background of the tabs.
+        I wanted to make the color simple such as monotone but have a little bit of accent points.
+-->

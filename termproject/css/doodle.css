@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../media/letters.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: fantasy, cursive, serif;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+p a {
+    text-decoration: none;
+}
+a, a:visited {
+    color: white;
+}
+
+
+
+
+
+.paw {
+    width: 5vh;
+    top: 5vh;
+}
+
+/*
+#game {
+    background-color: black;
+    width: 50vw;
+    height: 80vh;
+    margin: 0 25%;
+}
+div {
+    display: inline;
+    height: 80px;
+}
+.fa-paw {
+    color: blue;
+    font-size: 5em;
+    position: relative;
+}
+.letter {
+    color: white;
+    font-size: 2em;
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/

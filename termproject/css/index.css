@@ -1,0 +1,175 @@
+/*general styling*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: fantasy, cursive, serif;
+    color: white;
+}
+#wrapper1 {
+    height: 800vh;
+}
+#wrapper2 {
+    height: 600vh;
+}
+#wrapper3 {
+    height: 400vh;
+}
+#wrapper4 {
+    height: 200vh;
+}
+
+/*header styling*/
+#header {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    text-align: center;
+}
+h1 {
+    font-size: 4em;
+    padding-top: 7%;
+}
+#intro {
+    font-size: 1.75em;
+    width: 80%;
+    margin: 3% 10%;
+    line-height: 1.5em;
+}
+form {
+    margin-top: 3%;
+}
+input {
+    font-family: fantasy;
+    font-size: 0.75em;
+    outline: none;
+}
+input:focus {
+    color: white;
+    background-color: black;
+}
+button {
+    color: white;
+    background-color: darkred;
+    font-family: cursive;
+    font-size: 0.75em;
+    margin-top: 1%;
+    padding: 0 1%;
+}
+/*die positioning v2
+#die {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+die positioning v3
+#die {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}
+*/
+
+/*main contents styling*/
+#cover1, #cover2, #cover3 {
+    opacity: 0.1;
+}
+#content1, #content2, #content3 {
+    background: black;
+    height: 100vh;
+    margin-top: -100vh;
+    position: sticky;
+    top: 0;
+}
+#letter, #music {
+    width: 77%;
+    height: 100%;
+    margin-left: 23%;
+}
+#room {
+    width: 76%;
+    height: 100%;
+}
+
+/*text styling*/
+aside {
+    position: absolute;
+    top: 20vh;
+    width: 20%;
+    padding-left: 2%;
+}
+#mid {
+    left: 75vw;
+}
+
+/*footer styling*/
+#footer {
+    background: black;
+    height: 100vh;
+    margin-top: -100vh;
+    padding-top: 8%;
+    position: relative;
+}
+h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1%;
+}
+article {
+    width: 98%;
+    height: 75%;
+    margin: 0 1%;
+}
+#tabs {
+    font-size: 1.2em;
+    background-color: black;
+    border: 5px solid darkred;
+    border-radius: 15px;
+}
+#tab1, #tab2, #tab3, #tab4 {
+    width: 100%;
+    height: 80%;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+#tab4 iframe {
+    background-color: white;
+}
+.ui-widget-header {
+   background: black;
+   border: 1px solid black;
+}
+li a {
+    background: darkred;
+    border-bottom: 1px solid darkred;
+}
+
+/*secret styling*/
+area {
+    cursor: default;
+}
+
+/*iframe styling*/
+@media only screen and (min-width: 630px) {
+    #tab1, #tab2, #tab3, #tab4 {
+        height: 90%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    article {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+@media only screen and (min-width: 1260px) {
+    article {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
