@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Game</title>
+    <link rel="stylesheet" href="css/flyinggame.css">
+    <script src="https://kit.fontawesome.com/7d6d56497b.js" crossorigin="anonymous"></script>
+    <script src="js/flyinggame.js"></script>
+</head>
+<body onload="startGame()">
+    <h1>Flying Game</h1>
+    <p>Press <i class='fas fa-arrow-up'></i> <i class='fas fa-arrow-right'></i> <i class='fas fa-arrow-down'></i> <i class='fas fa-arrow-left'></i> keys to control the helicopter and avoid the obstacles!</p>
+    <p>
+        <button onclick="window.location.reload()">Try Again</button>
+        <button onclick="startGame()" id="fast">Go Faster</button>
+    </p>
+    <p><a href="index.html">Return to Main Page</a></p>
+    <p><a href="readme.txt" target="_blank">Read Me</a></p>
+    <!-- Controller Option2: Buttons 
+    <div>
+        <button onmousedown="moveUp()" ontouchstart="moveUp()" onmouseup="clearMove()">UP</button><br>
+        <button onmousedown="moveLeft()" ontouchstart="moveLeft()" onmouseup="clearMove()">LEFT</button>
+        <button onmousedown="moveRight()" ontouchstart="moveRight()" onmouseup="clearMove()">RIGHT</button><br>
+        <button onmousedown="moveDown()" ontouchstart="moveDown()" onmouseup="clearMove()">DOWN</button>
+    </div>
+    -->
+</body>
+</html>

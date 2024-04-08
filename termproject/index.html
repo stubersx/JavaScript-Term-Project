@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Website</title>
+    <script src="https://kit.fontawesome.com/7d6d56497b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
@@ -65,10 +66,10 @@
         <section id="content3">
             <div id="cover3">
                 <aside>
-                    <h2>Rhythm Game</h2>
-                    <p>Press any key with precise timing when you see the cue.</p>
+                    <h2>Flying Game</h2>
+                    <p>Press <i class='fas fa-arrow-up'></i> <i class='fas fa-arrow-right'></i> <i class='fas fa-arrow-down'></i> <i class='fas fa-arrow-left'></i> keys to control the helicopter and avoid the obstacles!</p>
                 </aside>
-                <img id="music" usemap="#m1" src="media/music.jpg">
+                <img id="music" usemap="#m1" src="media/cockpit.jpg">
                 <map name="#m1">
                     <area shape="rect" coords="590,110,690,300" onclick="window.open('secret.html', 'Secret Page', 'width=530, height=800')">
                 </map>
@@ -81,7 +82,7 @@
             <ul>
                 <li onclick="openTab('doodle.html')"><a href="#tab1" style="color: white;">Doodle</a></li>
                 <li onclick="openTab('escaperoom.html')"><a href="#tab2" style="color: white;">Escape Room</a></li>
-                <li onclick="openTab('rhythmgame.html')"><a href="#tab3" style="color: white;">Rhythm Game</a></li>
+                <li onclick="openTab('flyinggame.html')"><a href="#tab3" style="color: white;">Flying Game</a></li>
                 <li onclick="openTab('readme.txt')"><a href="#tab4" style="color: white;">Read Me</a></li>
             </ul>
             <section id="tab1">
@@ -91,7 +92,7 @@
                 <iframe src="escaperoom.html"></iframe>
             </section>
             <section id="tab3">
-                <iframe src="rhythmgame.html"></iframe>
+                <iframe src="flyinggame.html"></iframe>
             </section>
             <section id="tab4">
                 <iframe src="readme.txt"></iframe>
