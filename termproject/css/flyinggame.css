@@ -1,0 +1,42 @@
+/*general styling*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../media/cockpit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: fantasy, cursive, serif;
+    color: black;
+    text-align: center;
+}
+h1 {
+    margin-top: 3%;
+}
+p a {
+    text-decoration: none;
+}
+a, a:visited {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+/*canvas styling*/
+canvas {
+    border: 8px groove steelblue;
+}
+
+/*try again button styling*/
+button {
+    font-family: fantasy;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: darkseagreen;
+    margin: 1% 1% 2% 1%;
+    cursor: pointer;
+}
+#fast {
+    background-color: red;
+}
